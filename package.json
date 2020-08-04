@@ -1,0 +1,30 @@
+{
+  "name": "ndoejs_blog",
+  "version": "1.0.0",
+  "description": "利用nodejs，koa，router，art-template搭建一个博客系统",
+  "main": "index.js",
+  "scripts": {
+    "start": "supervisor  app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhuominlooper/ndoejs_blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhuominlooper/ndoejs_blog/issues"
+  },
+  "homepage": "https://github.com/zhuominlooper/ndoejs_blog#readme",
+  "dependencies": {
+    "art-template": "^4.13.2",
+    "chalk": "^4.1.0",
+    "koa": "^2.13.0",
+    "koa-art-template": "^1.1.1",
+    "koa-router": "^9.1.0",
+    "koa-static": "^5.0.0",
+    "mongodb": "^3.6.0"
+  },
+  "devDependencies": {}
+}
