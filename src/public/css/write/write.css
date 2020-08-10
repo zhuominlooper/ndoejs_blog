@@ -1,0 +1,28 @@
+.write_flex{
+    display: flex;
+    direction: row;
+}
+ .editor_three{
+    flex: 2;
+} 
+.editor_two{
+    flex: 6; 
+    min-width:700px; 
+    margin-top: 32px;
+    height: 500px;
+} 
+.editor_one{
+    flex: 2;
+} 
+  
+  .toolbar {
+    background: hsl(180, 36%, 79%);
+    border: 1px solid #ccc;
+}
+.text {
+
+    background: hsl(180, 36%, 79%);
+    border: 1px solid #ccc;
+    height: 600px;
+}
+

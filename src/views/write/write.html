@@ -1,0 +1,37 @@
+{{extend '../common/layout.html'}}
+
+{{ block 'link' }}
+<link rel="stylesheet" href="css/write/write.css">
+{{ /block }}
+{{ block 'content' }}
+{{include '../common/header.html'}}
+<div class="write_flex">
+    <div class="editor_one">
+
+    </div>
+    <div class="editor_two">
+        <div id="div1" class="toolbar">
+        </div>
+        <div id="div2" class="text"> <!--可使用 min-height 实现编辑区域自动增加高度-->
+        </div>
+    </div>
+    <div class="editor_three">
+
+    </div>
+</div>
+
+
+
+
+{{/block}}
+
+
+{{ block 'script' }}
+<script src='js/common.js'></script>
+<script type="text/javascript" src=" js/write/wangEditor.min.js"></script>
+<script>
+ var E = window.wangEditor
+        var editor1 = new E('#div1', '#div2')  // 两个参数也可以传入 elem 对象，class 选择器
+        editor1.create()
+</script>
+{{ /block }}

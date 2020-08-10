@@ -5,6 +5,6 @@ var router=new Router()
 
 //配置路由
 router.get('/',async(ctx)=>{
-      ctx.body='这是博客管理页面'//向浏览器返回数据
+      await ctx.render('write/write.html')
 })
 module.exports=router.routes()//返回路由启动

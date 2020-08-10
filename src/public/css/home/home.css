@@ -1,0 +1,237 @@
+.div_flex{
+    margin-top: 32px;
+    display: -webkit-flex;
+    display: flex;
+    background: hsl(180, 36%, 79%);
+    border-radius: 20px;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    width: 1024px;
+    min-height: 800px;
+    margin: 0 auto;
+}
+section{
+    margin-top: 24px;
+}
+
+.item1 {
+    border-right: 1px dashed #645f5f;
+    -webkit-flex-direction: column;
+    flex-direction:column;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex: 1;
+    flex: 1;
+}
+
+.item2 {
+    -webkit-flex-direction: column;
+    flex-direction:column;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex: 2;
+    flex: 2;
+}
+.div_card{
+     margin: 10px;
+     margin-right:24px;
+     padding: 10px;
+    min-height: 120px;
+    border-radius: 16px;
+}
+
+.aside_title{
+    margin-left: 8px;
+    font-weight: bold;
+}
+.div_tag{
+    display: flex;
+    flex-direction:row ;
+    flex-wrap:wrap 
+}
+
+.div_tag>a{
+    border: 2px hsl(134, 16%, 55%) solid  ;
+    border-radius: 4px;
+    padding: 4px;
+    margin-right: 16px;
+    display: block;
+    min-width: 50px;
+    margin-top: 20px;
+    text-decoration:none;
+    text-align: center;
+    color:black;
+    font-weight: 400;
+ 
+}
+.div_tag>a:hover{
+    border: 2px hsl(134, 16%, 55%) solid  ;
+    border-radius: 4px;
+    padding: 4px;
+    margin-right: 16px;
+    display: block;
+    min-width: 50px;
+    margin-top: 20px;
+    text-decoration:none;
+    text-align: center;
+    font-weight: 400;
+    background: rgb(231, 151, 32);
+    color: #fff;
+}
+#myCarousel {
+   margin: 24px;
+   margin-top: 64px;
+   border-radius: 16px;
+}
+#myCarousel a {
+    border-radius: 16px;
+ }
+.carousel_img img{
+    border-radius: 16px;
+    width: 100%;
+    height: 284px !important; 
+}
+
+.art_flex{
+     margin: 16px;
+     padding-bottom: 5px;
+      line-height: 30px; 
+      font-size: 16px; 
+      border-bottom: 2px solid #226039;
+}
+.art_panel{
+
+    margin: 24px;
+    border-radius: 16px;
+}
+.art_panel .panel{
+    box-shadow: 5px 5px 5px #888888;
+}
+.panel-title p{
+    color: rgb(213, 247, 247);
+    margin-top: 8px;
+    font-size: small;
+}
+.panel-heading{
+    padding-bottom: 0;
+}
+.art-body{
+    display: -webkit-flex;
+    display: flex; 
+    flex-direction:row
+}
+.art-body-detail{
+    margin-left: 16px;
+    -webkit-flex:2;
+    flex: 2;
+}
+.art-body-detail p{
+    word-break:break-all;
+    overflow: hidden;
+ 	text-overflow: ellipsis;
+ 	display: -webkit-box;
+ 	-webkit-line-clamp: 5;
+ 	-webkit-box-orient: vertical;
+}
+
+.art-body-img{
+    -webkit-flex: 1;
+    flex: 1;  
+}
+.art-body-img img{
+    height: 150px;
+    border-radius: 8px;
+    width: 100%;
+}
+
+/* 详情按钮动画 */
+.button {
+    float:right;
+    display: inline-block;
+    border-radius: 4px;
+    background-color: #337ab7;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 8px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '»';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+
+  /* 底部布局 */
+  footer {
+    min-width: 1024px;
+    display: -webkit-flex;
+    display: flex; 
+    flex-direction:row;
+      margin-top: 54px;
+    width: 100%;
+    background: rgba(56, 134, 72, 1);
+    text-align: center;
+    color: #f5f2df;
+}
+footer p, label {
+    font-family: gooper-light;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 21px;
+    margin-bottom: 0;
+}
+
+footer h2{
+    font-family: gooper-medium;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+}
+footer a{
+    color: #f5f2df;
+}
+.footer_one{
+    display: -webkit-flex;
+    display: flex; 
+    -webkit-flex:1;
+    flex: 1;
+}
+.footer_two{
+    -webkit-flex:2;
+    flex: 2;
+}
+.footer_three{
+    flex-direction:column;
+    display: -webkit-flex;
+    display: flex; 
+    flex: 1;
+}
+.footer_three img{
+    padding-top: 32px;
+    margin: 0 auto;
+    height: 120px;
+    width: 100px;
+}

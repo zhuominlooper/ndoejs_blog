@@ -1,0 +1,316 @@
+{{extend '../common/layout.html'}}
+
+{{ block 'link' }}
+<link rel="stylesheet" href="/css/home/home.css">
+{{ /block }}
+
+
+{{ block 'content' }}
+{{include '../common/header.html'}}
+<nav class="nav">
+    <div class="title l">记录回忆</div>
+    <ul>
+        <li class="current"><a href="index.html">首页</a></li>
+        <li><a href="study.html">学无止境</a></li>
+        <li><a href="css-js.html">CSS/JS特效</a></li>
+        <li><a href="../write/write.html">写博客</a></li>
+    </ul>
+</nav>
+<!-- 主题内容 -->
+<section>
+    <div class="div_flex">
+        <div class=" item1">
+            <div class="div_card">
+                <div class="art l">
+                    <h2 class="art-txt">
+                        <span class="glyphicon glyphicon-book"></span>
+                        <span class="aside_title">推荐文章</span> </h2>
+                    <ul class="art-list">
+                        <li><a href="#">
+                                <span style="width: auto;" class="glyphicon glyphicon-star"></span>
+                                <span>移动端开发问题简述</span></a></li>
+                        <li><a href="#">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span>申请接入QQ/微信/微博登录方法</span></a></li>
+                        <li><a href="#">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span>如何临时项目展示(简易内网穿透)</span></a></li>
+                        <li><a href="#">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span>响应式布局与自适应式布局有什么不同？</span></a></li>
+                        <li><a href="#">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span>个人网站虚拟主机的选购</span></a></li>
+                        <li><a href="#">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span>网站域名的解析与绑定</span></a></li>
+                        <li><a href="#">
+                                <span class="glyphicon glyphicon-star"></span>
+                                <span>个人域名IPC备案/网站备案注意事项</span></a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="div_card">
+                <div class="art l">
+                    <h2 class="art-txt">
+                        <span class="glyphicon glyphicon-leaf"></span>
+                        <span class="aside_title">热门标签</span>
+                    </h2>
+                    <div class="div_tag">
+                        <a><span>决心</span></a>
+                        <a><span>响应式界面</span></a>
+                        <a><span>SEO优化</span></a>
+                        <a><span>运气</span></a>
+                        <a><span>nodejs学习</span></a>
+                        <a><span>多类按钮</span></a>
+                        <a><span>特色轮播图</span></a>
+                        <a><span>加油</span></a>
+                        <a><span>奋斗</span></a>
+
+                    </div>
+
+                </div>
+            </div>
+            <div class="div_card">
+                <div class="art l">
+                    <h2 class="art-txt">
+                        <span class="glyphicon glyphicon-stats"></span>
+                        <span class="aside_title">文章BI统计</span>
+                    </h2>
+                    <div id="main" style="width: 320px;height:400px;"></div>
+
+                </div>
+            </div>
+
+            <div class="div_card">
+                <div class="art l">
+                    <h2 class="art-txt">
+                        <span class="glyphicon glyphicon-transfer"></span>
+                        <span class="aside_title">常用链接</span>
+                    </h2>
+                    <ul class="fri-link">
+                        <li><a href="https://www.w3school.com.cn/" target="_blank" rel="nofollow">w3school</a></li>
+                        <li><a href="https://www.runoob.com/" target="_blank" rel="nofollow">菜鸟联盟</a></li>
+                        <li><a href="https://www.bejson.com/default.htm" target="_blank" rel="nofollow">在线json工具</a>
+                        </li>
+                        <li><a href="https://cli.im/" target="_blank" rel="nofollow">草料二维码</a></li>
+                        <li><a href="https://www.iconfont.cn/" target="_blank" rel="nofollow">阿里巴巴矢量图库</a></li>
+                        <li><a href="https://www.aliyun.com/minisite/goods?userCode=2ebbhwss&share_source=copy_link&accounttraceid=b858bc8681db48cbaf2622a59c53bf8dutwv"
+                                target="_blank" rel="nofollow">阿里云小站</a></li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+
+        <div class=" item2">
+            <!-- 轮播图 -->
+            <div id="myCarousel" class="carousel slide">
+                <!-- 轮播（Carousel）指标 -->
+                <ol class="carousel-indicators">
+                    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#myCarousel" data-slide-to="1"></li>
+                    <li data-target="#myCarousel" data-slide-to="2"></li>
+                    <li data-target="#myCarousel" data-slide-to="3"></li>
+                </ol>
+
+                <!-- 轮播（Carousel）项目 -->
+                <div class="carousel-inner carousel_img">
+                    <div class="item active">
+                        <img src="/image/1.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="/image/2.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="/image/3.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="/image/4.jpg">
+                    </div>
+                </div>
+                <!-- 轮播（Carousel）导航 -->
+                <a class="left carousel-control " href="#myCarousel" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <!-- 文章总标题 -->
+            <div>
+                <h2 class="art_flex">
+                    <span class="glyphicon glyphicon-file"></span>
+                    <span class="aside_title">最新文章</span>
+                </h2>
+            </div>
+            <!-- 文章显示 -->
+            <div class="art_panel">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><strong>个人博客第一篇文章</strong>
+                            <p>发布时间：2020/07/18 作者:looper.m.zhuo</p>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="art-body">
+                            <!-- 文章图片 -->
+                            <div class="art-body-img">
+                                <img src="/image/8.jpg">
+                            </div>
+                            <!-- 文章内容 -->
+                            <div class="art-body-detail">
+                                <p>网站三层架构(结构层-表现层-行为层)如图：
+                                    如果把一个网站比做人的话，人的结构层相当于骨架、血液、肌肉。人的表现层相当于外貌、化妆、衣服。人的行为层就相当于听课、运动、说话。
+                                    结构层 1、html(Hypertext Markup Language)超文本标记语言 是用于描述网页文档的一种标记语言。结构层 1、html(Hypertext
+                                    Markup Language)超文本标记语言 是用于描述网页文档的一种标记语言。</p>
+                                <!-- 详情按钮 -->
+                                <div>
+                                    <button class="button" style="vertical-align:middle"><span>查看详情</span></button>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+             <!-- 文章显示 -->
+             <div class="art_panel">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><strong>个人博客第一篇文章</strong>
+                            <p>发布时间：2020/07/18 作者:looper.m.zhuo</p>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="art-body">
+                            <!-- 文章图片 -->
+                            <div class="art-body-img">
+                                <img src="/image/8.jpg">
+                            </div>
+                            <!-- 文章内容 -->
+                            <div class="art-body-detail">
+                                <p>网站三层架构(结构层-表现层-行为层)如图：
+                                    如果把一个网站比做人的话，人的结构层相当于骨架、血液、肌肉。人的表现层相当于外貌、化妆、衣服。人的行为层就相当于听课、运动、说话。
+                                    结构层 1、html(Hypertext Markup Language)超文本标记语言 是用于描述网页文档的一种标记语言。结构层 1、html(Hypertext
+                                    Markup Language)超文本标记语言 是用于描述网页文档的一种标记语言。</p>
+                                <!-- 详情按钮 -->
+                                <div>
+                                    <button class="button" style="vertical-align:middle"><span>查看详情</span></button>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+             <!-- 文章显示 -->
+             <div class="art_panel">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><strong>个人博客第一篇文章</strong>
+                            <p>发布时间：2020/07/18 作者:looper.m.zhuo</p>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="art-body">
+                            <!-- 文章图片 -->
+                            <div class="art-body-img">
+                                <img src="/image/8.jpg">
+                            </div>
+                            <!-- 文章内容 -->
+                            <div class="art-body-detail">
+                                <p>网站三层架构(结构层-表现层-行为层)如图：
+                                    如果把一个网站比做人的话，人的结构层相当于骨架、血液、肌肉。人的表现层相当于外貌、化妆、衣服。人的行为层就相当于听课、运动、说话。
+                                    结构层 1、html(Hypertext Markup Language)超文本标记语言 是用于描述网页文档的一种标记语言。结构层 1、html(Hypertext
+                                    Markup Language)超文本标记语言 是用于描述网页文档的一种标记语言。</p>
+                                <!-- 详情按钮 -->
+                                <div>
+                                    <button class="button" style="vertical-align:middle"><span>查看详情</span></button>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+             <!-- 文章显示 -->
+             <div class="art_panel">
+                <div class="panel panel-primary">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><strong>个人博客第一篇文章</strong>
+                            <p>发布时间：2020/07/18 作者:looper.m.zhuo</p>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="art-body">
+                            <!-- 文章图片 -->
+                            <div class="art-body-img">
+                                <img src="/image/8.jpg">
+                            </div>
+                            <!-- 文章内容 -->
+                            <div class="art-body-detail">
+                                <p>网站三层架构(结构层-表现层-行为层)如图：
+                                    如果把一个网站比做人的话，人的结构层相当于骨架、血液、肌肉。人的表现层相当于外貌、化妆、衣服。人的行为层就相当于听课、运动、说话。
+                                    结构层 1、html(Hypertext Markup Language)超文本标记语言 是用于描述网页文档的一种标记语言。结构层 1、html(Hypertext
+                                    Markup Language)超文本标记语言 是用于描述网页文档的一种标记语言。</p>
+                                <!-- 详情按钮 -->
+                                <div>
+                                    <button class="button" style="vertical-align:middle"><span>查看详情</span></button>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+        </div>
+
+</section>
+
+<!-- 底部内容 -->
+<footer >
+    <div class="footer_one">
+
+    </div>
+    <div  class="footer_two">
+        <p><strong>2021 Brand New Conference</strong> / <strong>Austin, TX</strong> / <strong style="white-space:nowrap;">October 7 &amp; 8, 2021</strong><br>@ The Long Center for the Performing Arts</p>
+    <h2 class="gray">Past BNCONF sites: <a href="https://www.underconsideration.com/brandnewconference/2019">2019</a> <span>/</span> <a href="https://www.underconsideration.com/brandnewconference/2018">2018</a> <span>/</span> <a href="https://www.underconsideration.com/brandnewconference/">2017</a> <span>/</span> <a href="https://www.underconsideration.com/brandnewconference/2016/">2016</a> <span>/</span> <a href="https://www.underconsideration.com/brandnewconference/2015/">2015</a> <span>/</span> <a href="https://www.underconsideration.com/brandnewconference/2014/">2014</a> <span>/</span> <a href="https://www.underconsideration.com/brandnewconference/2013/">2013</a> <span>/</span> <a href="https://www.underconsideration.com/brandnewconference/2012/">2012</a> <span>/</span> <a href="https://www.underconsideration.com/brandnewconference/2011/">2011</a> <span>/</span> <a href="https://www.underconsideration.com/brandnewconference/2010/">2010</a></h2>
+    <p><strong>Contact</strong><br><a href="mailto:brandnewconference@underconsideration.com">Email</a> / Phone: (917) 755-0750</p>
+
+    </div>
+    <div class="footer_three">
+        <p><strong> 扫一扫，关注我们</strong></p>
+        <img   src='/image/weixin.png'>
+    </div>
+    
+    </footer>
+
+{{/block}}
+
+
+{{ block 'script' }}
+<script src='/js/common.js'></script>
+<script src="https://cdn.staticfile.org/echarts/4.3.0/echarts.min.js"></script>
+<script src='/js/home/home.js'></script>
+{{ /block }}

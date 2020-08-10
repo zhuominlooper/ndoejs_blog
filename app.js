@@ -11,7 +11,7 @@ const Static = require('koa-static');
 const Render=require('koa-art-template')
 
 //引入路由模块
-const AdminRouter=require('./src/routers/admin')
+const WriteRouter=require('./src/routers/write')
 const HomeRouter=require('./src/routers/home')
 
 //实例化
@@ -26,12 +26,12 @@ Render(app,{
 })
 
 //处理静态文件
-console.log(111,__dirname)
-app.use(Static(__dirname+'/src/static/'));
+app.use(Static(__dirname+'/src/public'));
 
 //配置一级路由
-router.use('/home',AdminRouter)//配置admin模块路由
-router.use('/admin',HomeRouter)//配置news模块路由
+router.use('/home',HomeRouter)//配置news模块路由
+router.use('/write',WriteRouter)//配置admin模块路由
+
 
 //配置信息
 app.use(router.routes()).use(router.allowedMethods())
@@ -40,5 +40,5 @@ app.use(router.routes()).use(router.allowedMethods())
 console.log(Chalk.red('nodejs服务器启动成功'))
 
 //设置80端口，让浏览器使用默认80端口可以省略
-app.listen(80)
+app.listen(3000)
 console.timeEnd(Chalk.yellow('启动耗时'))
