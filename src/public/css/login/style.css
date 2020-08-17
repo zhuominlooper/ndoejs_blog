@@ -1,0 +1,136 @@
+body
+{
+	font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+	margin: 0;
+	padding: 0;
+	background-image: url(../../image/bgimg.jpg);	/* 背景图片 */
+	background-repeat: no-repeat;	/* 背景图片不重复 */
+}
+
+#bigBox
+{
+	margin: 0 auto;	/* login框剧中 */
+	margin-top: 200px; /* login框与顶部的距离 */
+	padding: 20px 50px;	/* login框内部的距离(内部与输入框和按钮的距离) */
+	background-color: #00000090;	/* login框背景颜色和透明度 */
+	width: 450px;
+	height: 400px;
+	border-radius: 10px;	/* 圆角边 */
+	text-align: center;	/* 框内所有内容剧中 */
+}
+
+#bigBox h1
+{
+	color: white;	/* LOGIN字体颜色 */
+}
+
+#bigBox .inputBox
+{
+	margin-top: 30px;	/* 输入框顶部与LOGIN标题的间距 */
+}
+
+#bigBox .inputBox .inputText
+{
+	margin-top: 20px;	/* 输入框之间的距离 */
+}
+
+#bigBox .inputBox .inputText span
+{
+	color: white;	/* icon颜色 */
+}
+
+#bigBox .inputBox .inputText input
+{
+	border: 0;	/* 删除输入框边框 */
+	padding: 8px 8px;	/* 输入框内的间距 */
+	border-bottom: 1px solid white;	/* 输入框白色下划线 */
+	background-color: #00000000;	/* 输入框透明 */
+	color: white;	/* 输入字体的颜色 */
+}
+
+#bigBox .loginButton
+{
+	margin-top: 20px;	/* 按钮顶部与输入框的距离 */
+	width: 150px;
+	height: 25px;
+	color: white;	/* 按钮字体颜色 */
+	border: 0; /* 删除按钮边框 */
+	border-radius: 20px;	/* 按钮圆角边 */
+	background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);	/* 按钮颜色 */
+}
+
+.login_title{
+	font-size:60PX;
+	
+	color: white;
+	top:120px;
+	position: relative;
+	text-align: center;
+	margin: 0;
+}
+.log_flex{
+	margin-left: 57px;
+	display: flex;
+	direction: row;
+}
+.log_flex input{
+	width: 84px;
+	margin-left: 24px;
+}
+
+canvas{
+    border: 2px solid rgb(136, 131, 131);
+    border-radius: 2px;
+    
+}
+
+.check_pwd{
+	margin-top: 20px;
+	color:white ;
+}
+.check_pwd label{
+	margin-right: 32px;
+}
+
+.forget-btn{
+	border: none;
+	background: none;
+}
+h1{
+	margin: 0;
+}
+.form-control{
+
+	width: auto ;
+    display: inline-block !important; 
+    height: 34px;
+    padding: 6px 12px;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #555;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.from-label{
+	text-align: right;
+    padding-right: 0px;
+    padding-top: 6px;
+}
+.from-title{
+	text-align: left !important;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+	-webkit-appearance: none;
+}
+input[type="number"]{
+	-moz-appearance: textfield;
+}
+.load{
+	width: 100px;
+    margin: auto;
+    padding-top: 300px;
+}

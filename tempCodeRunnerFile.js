@@ -1,1 +1,1 @@
-home
+exists('./src/public/', './dist/public', copy)
