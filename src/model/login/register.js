@@ -117,28 +117,36 @@ function onRegister(){
     toastrWarning("请输入密码")
     return 
   }
-  if(!registerRequest.confUserPwd){
-    toastrWarning("请再次输入密码")
-    return 
-  }
-  if(registerRequest.userPwd!==registerRequest.confUserPwd){
-    toastrWarning("两次输入的密码不相等，请重新输入")
-    return   
-  }
-  if(!registerRequest.userPhone||registerRequest.userPhone.length!==11){
-    toastrWarning("请输入正确的手机号码")
-    return 
-  } 
-  console.log(code)
-  if(!registerRequest.verificatCode||registerRequest.verificatCode!==code){
-    toastrWarning("请输入正确有效的验证码")
-    return 
-  }
+//   if(!registerRequest.confUserPwd){
+//     toastrWarning("请再次输入密码")
+//     return 
+//   }
+//   if(registerRequest.userPwd!==registerRequest.confUserPwd){
+//     toastrWarning("两次输入的密码不相等，请重新输入")
+//     return   
+//   }
+//   if(!registerRequest.userPhone||registerRequest.userPhone.length!==11){
+//     toastrWarning("请输入正确的手机号码")
+//     return 
+//   } 
+//   console.log(code)
+//   if(!registerRequest.verificatCode||registerRequest.verificatCode!==code){
+//     toastrWarning("请输入正确有效的验证码")
+//     return 
+//   }
   clearInterval(timer)
   document.getElementById('btn_verificat').disabled=true
   document.getElementById('btn_verificat').innerHTML="获取验证码"
 
    //向数据库插入值
-
+   let saveRegisterRequest=JSON.parse(JSON.stringify(registerRequest))
+   saveRegisterRequest=new Date()
+   ajaxPost('http://localhost:3000/login/register',registerRequest).then(res=>{
+       console.log(333,result)
+    let result=JSON.parse(res)
+       toastrSucess("注册成功")
+}).catch(err=>{
+   toastrError(err)  
+})
 
 }

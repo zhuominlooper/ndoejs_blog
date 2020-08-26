@@ -54,19 +54,10 @@ class DbOption {
         })
 
     }
-    insert(name, data) { //插入数据
-        return new Promise((resolve, reject) => {
-            console.log('插入数据')
-            this.connect().then((db) => {
-                db.collection(name).insert(data).toArray((err, data) => {
-                    if (err) {
-                        reject(err)
-                    } else {
-                        resolve(data)
-                    }
-                })
-            })
-        })
+   async insert(name, data) { //插入数据
+          let db= await this.connect()
+          return   db.collection(name).insertOne(data)
+      
     }
     delete(dbName, data) { //删除数据
         return new Promise((resolve, reject) => {
